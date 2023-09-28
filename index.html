@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Search App with Bootstrap</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap');
+        form{
+            font-family: 'Poppins', sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        #search-input {
+            width: 60%;
+            max-width: 400px;
+        }
+    </style>
+</head>
+<body>
+    <!-- input section -->
+    <section id="input">
+        <div class="container text-center px-1">
+            <h1 class="display-5 py-5">Image Search App</h1>
+            <form>
+                <input type="text" id="search-input" placeholder="Search for images" class="form-control form-control-lg shadow">
+                <button type="submit" id="search-btn" class="btn btn-dark btn-lg shadow ms-2">Search</button>
+            </form>
+        </div>       
+    </section>
+
+    <!-- result section -->
+    <section id="results">
+        <div class="container">
+            <div class="search-results row my-5 justify-content-center justify-content-md-between align-items-start">
+                <div class="search-result card col-md-5 col-lg p-0 m-3 shadow">
+                    <a href="https://unsplash.com/photos/zhecQq94jt4" target="_blank" rel="noopener" class="text-decoration-none text-secondary text-center">
+                        <img src="https://plus.unsplash.com/premium_photo-1676998930828-cabd06cb61c5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1887&q=80" class="card-img-top img-fluid"  alt="Free Semi-opened Laptop Computer Turned-on on Table Stock Photo">
+                        <div class="card-body">
+                            <p class="card-text text-center text-capitalize fs-6">In a Cafe with Laptop</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="search-result card col-md-5 col-lg p-0 m-3 shadow">
+                    <a href="https://www.pexels.com/photo/man-in-black-shirt-sits-behind-desk-with-computers-2102416/" target="_blank" rel="noopener" class="text-decoration-none text-secondary">
+                        <img src="https://images.pexels.com/photos/2102416/pexels-photo-2102416.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" class="card-img-top img-fluid" alt="Free Man in Black Shirt Sits Behind Desk With Computers Stock Phot">
+                        <div class="card-body">
+                            <p class="card-text text-center text-capitalize fs-6">Developer Office</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="search-result card col-md-5 col-lg p-0 m-3 shadow">
+                    <a href="https://www.pexels.com/photo/turned-on-macbook-pro-3584967/" target="_blank" rel="noopener" class="text-decoration-none text-secondary">
+                        <img src="https://images.pexels.com/photos/3584967/pexels-photo-3584967.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" class="card-img-top img-fluid" alt="girl standing on the stairs">
+                        <div class="card-body">
+                          <p class="card-text text-center text-capitalize fs-6">Turned On Machbook</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <!-- show more button -->
+        <div class="my-5 text-center">
+            <button type="submit" id="show-more-button" class="btn btn-dark btn-lg shadow d-none">Show More</button>
+        </div>
+    </section>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script src="./imgsearch.js"></script>
+</body>
+</html>
