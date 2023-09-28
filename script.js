@@ -24,17 +24,21 @@ async function searchImages() {
     results.map((result) => {
         const imgWrapper = document.createElement('div');
         imgWrapper.classList.add('search-result', 'card', 'col-md-5', 'col-lg-3', 'p-0', 'm-3', 'shadow');
+
         const imgLink = document.createElement('a');
         imgLink.href = result.links.html;
         imgLink.target = '_blank';
         imgLink.rel = 'noopener';
         imgLink.classList.add('text-decoration-none', 'text-dark');
+
         const image = document.createElement('img');
         image.src = result.urls.small;
         image.alt = result.alt_description;
         image.classList.add('card-img-top', 'img-fluid');
+
         const cardBody = document.createElement('div');
         cardBody.classList.add('card-body');
+        
         const cardText = document.createElement('p');
         cardText.classList.add('card-text', 'text-center', 'fs-5', 'text-capitalize');
         cardText.textContent = result.alt_description;
