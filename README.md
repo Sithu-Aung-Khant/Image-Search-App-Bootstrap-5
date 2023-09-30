@@ -1,15 +1,27 @@
 # Image Search App rebuilding with Bootstrap
 
-I've followed buildng a JS Project | Image Search App with Pexels API [VIDEO](https://www.youtube.com/watch?v=oaliV2Dp7WQ&t=447s&ab_channel=Tech2etc)
+I followed a tutorial on building a JS project | [Image Search App with Pexels API](https://www.youtube.com/watch?v=oaliV2Dp7WQ&t=447s&ab_channel=Tech2etc). However, since I was learning Bootstrap 5, I set myself a challenge to rebuild this website with just Bootstrap. My goal was to replace all the CSS code with Bootstrap classes, and this endeavor provided me with some intriguing insights.
 
-I try rebuild a image search app using Bootstrap and here is what I learned. I tried to replace all CSS codes with Bootstrap and I faced a lot of challenges and learned a lot from it.
+> **[!NOTE]**
+> **I understand that using Bootstrap classes for all styling isn't practical but I did this challenge just to enhance my understanding of Bootstrap concepts.**
 
-The real pain was when I try to manipulat DOM with event listensers. In Plain CSS version, I just had to create an element(div, a, image.etc), add a class and that's it. But when I try to do the same thing with Bootstrap, I have to add so many classes because as you know bootstrap is used by adding classes in an HTML element. I build all the grid system, marging, display all that stuffs in html elements so when I tried to manipulate from the resuls of calling and API, I have to readd all the bootstraps classes within the function. Here is the Screenshots of these two for better understanding.
 
-#### DOM MANIPULATION WITH CSS
-![](./assets/code.png)
+The most significant challenge arose when I attempted to manipulate the DOM with event listeners. 
 
-#### DOM Manipulation With Bootstrap
-![](./assets/code.with.bootstrap.png)
+In the plain CSS version, I could simply create an element (like div, a, image, etc.), add a class, and it was ready  since I had consolidated all the styling within a single class using an external CSS file. However, when I tried to achieve the same functionality with Bootstrap, I found myself needing to add numerous classes. 
 
-the main thing
+Bootstrap primarily uses classes to style HTML elements. I integrated the grid system, managed margins, and display properties directly within these elements. Consequently, when I attempted to manipulate the results of an API call, I had to reapply all the Bootstrap classes within the function. Below are screenshots of both versions for clarity.
+
+<table>
+    <tr>
+        <td><h3>DOM MANIPULATION WITH CSS</h3><img src="./assets/code.png" alt="CSS" width="500"></td>
+        <td><h3>DOM Manipulation With Bootstrap</h3><img src="./assets/code.with.bootstrap.png" alt="Bootstrap5" width="550"></td>
+    </tr>
+</table>
+
+After I have completed this challenge, I really better understand on bootstrap concept. I feel like I get constraints I meank using a framework is good but sometimes it's less flexible then when I using plain CSS. 
+
+using frameworks is good for collaboration and code maintaince, developmet. But I can do whatever I want with when I don't using them. I think I have to dive deep in those framworks and learn how to use effecitvely. 
+
+
+ 
