@@ -18,5 +18,3 @@ Bootstrap primarily uses classes to style HTML elements. I integrated the grid s
 </table>
 
 After completing this challenge, I have a much better understanding of the Bootstrap concept. I feel like I've grasped the constraints; I mean, using a framework is good, but sometimes it's less flexible than using plain CSS.
-
-using frameworks is good for collaboration and code maintaince, developmet. But I can do whatever I want with when I don't using them. I think I have to dive deep in those framworks and learn how to use effecitvely.
